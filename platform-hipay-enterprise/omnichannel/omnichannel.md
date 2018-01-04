@@ -135,6 +135,8 @@ Once a transaction has been initialized through the API mentioned in the previou
 
 For using the HiPay Enterprise SDK for iOS in your application to process transactions on a mPOS, please read [its documentation](/doc/hipay-enterprise-sdk-ios/).
 
+The mPOS does not manage receipt printing. This receipt is present in the notification (upon the Authorization).
+
 ### Transaction lifecycle
 
 When the transaction is initialized on the payment terminal, you may display a waiting screen on your application, indicating that the customer must pay on the terminal.
@@ -174,3 +176,10 @@ In that case, the workflow would be:
 #### List of statuses
 
 In order to get the complete list of statuses, please refer to the [HiPay Enterprise platform overview appendices](https://developer.hipay.com/getting-started/platform-hipay-enterprise/appendices/).
+
+## Refund a transaction paid on payment terminals (POS)
+
+You can make a refund on a transaction paid on payment terminal exactly like a e-commerce transaction. 
+With the Token we can refund the customer without being in store.
+
+
